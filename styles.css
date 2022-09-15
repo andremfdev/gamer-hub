@@ -18,7 +18,7 @@ header {
     padding-top: 32px;
 }
 
-header div {
+header div a{
     width: 120px;
     margin: auto;
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
@@ -27,13 +27,15 @@ header div {
     display: flex;
     padding: 4px;
     transition: transform .3s;
+
+    animation: fromTop .7s .3s backwards;
 }
 
-header div:hover {
+header div a:hover {
     transform: scale(1.1);
 }
 
-header div img {
+header div a img {
     width: 100%;
     border-radius: 50%;
 }
@@ -104,10 +106,6 @@ section ul li:hover {
 
 
 /* animation */
-
-header div {
-    animation: fromTop .7s .2s backwards;
-}
 
 @keyframes fromTop {
     from {
