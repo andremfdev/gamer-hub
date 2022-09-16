@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -103,8 +104,6 @@ section ul li:hover {
 }
 
 
-
-
 /* animation */
 
 @keyframes fromTop {
@@ -149,4 +148,28 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+footer span {
+    color: #A1A1AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 32px;
+
+    animation: fromBottom .7s backwards;
+    animation-delay: .8s;
+
+
+}
+
+footer a {
+    color: #A1A1AA;
+    transition: color 0.4s;
+}
+
+footer a:hover {
+color: #d8cbcb;
 }
